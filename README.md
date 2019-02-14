@@ -18,10 +18,8 @@ A reference implementation for client and server functional reactive programming
 ## Client
 - CycleJS
 - CycleJS State
-- PWA
-- Service Workers
-- Mobile first
-- Offline first
+- Mobile first (PWA, Service workers)
+- Offline first (PouchDB?)
 
 ## Continuous Deployment
 - Docker
