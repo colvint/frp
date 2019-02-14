@@ -23,5 +23,6 @@ A reference implementation for client and server functional reactive programming
 
 ## Continuous Deployment
 - Docker
-- Kubernetes
+- Kubernetes in production
+- Minikube in dev
 - Travis or Circle CI
