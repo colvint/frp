@@ -7,7 +7,7 @@ A reference implementation for client and server functional reactive programming
 - RXJS
 
 ## Server
-- Microservices (Moleculer)
+- Microservices (Moleculer, Serverless?)
 - Read / write separation
 - Database per service
 - ExpressJS
