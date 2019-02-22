@@ -24,6 +24,7 @@
 - should maintain an immutable event store as the single-source-of-truth
 - should be composed of functions triggered by events
 - each function should have its own exclusive datastore (table or database)
+- should be observable through tracing
 
 # Implementation
 
@@ -43,7 +44,7 @@ In other words, the implementation of a principle should be viewed only as the b
 - immutable-ext
 
 ## front
-- cyclejs
+- [cyclejs](https://cycle.js.org/)
 - reactjs
 - firebase
 - service workers
