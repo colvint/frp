@@ -1,4 +1,4 @@
-"This is my tech stack. There are many like it, but this one is mine."
+"This is my stack. There are many like it, but this one is mine."
 
 # principles
 
