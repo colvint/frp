@@ -1,28 +1,54 @@
-# Functional Reactive Programming (FRP)
-A reference implementation for client and server functional reactive programming concepts. FRP is a style of writing software which both obeys functional rules and treats event streams as king. Since time is the 4th dimension within which we live, it makes sense to develop with time as a first class citizen. This repo is about collecting the best in class components to create any app in the FRP style. In some cases, FRP either doesn't apply or isn't practical. These cases will be explicitly called out.
+"This is my tech stack. There are many like it, but this one is mine."
 
-## Foundation
-- SanctuaryJS
-- Fluture
-- RXJS
+# principles
 
-## Server
-- Microservices (Serverless)
-- Read / write separation
-- Database per service
-- ExpressJS
-- GraphQL with subscriptions
-- Kafka Streams
-- Tensorflow (RNN, Attention networks?)
+## global
+- data are event streams
+- functions process data
+- functions are pure
+- functions are legible
+- functions don't mutate data
+- iteratively decompose complexity into simple pure functions
+- separate reads from writes
 
-## Client
-- CycleJS
-- CycleJS State
-- Mobile first (PWA, Service workers)
-- Offline first (PouchDB?)
+## front
+- should expect to be offline
+- should be composed of pure components
+- should manage state outside components
+- should connect to a realtime API
+- should look great on mobile, desktop and browser
+- should be deep-linkable
 
-## Continuous Deployment
-- Docker
-- Kubernetes in production
-- Minikube in dev
-- Travis or Circle CI
+## back
+- should expose a realtime api
+- should maintain an immutable event store as the single-source-of-truth
+- should be composed of functions triggered by events
+- each function should have its own exclusive datastore (table or database)
+
+# Implementation
+
+```javascript
+const principles = Object.freeze({ ...global, ...front, ...back })
+
+let implementation = []
+```
+
+In other words, the implementation of a principle should be viewed only as the best available approximation. Principles should change very little. Tools, frameworks and providers may change frequently.
+
+## global
+- javascript
+- sanctuary
+- fluture
+- immutable
+- immutable-ext
+
+## front
+- cyclejs
+- reactjs
+- firebase
+- service workers
+
+## back
+- google cloud firestore
+- google cloud funnctions
+- google cloud pub sub
