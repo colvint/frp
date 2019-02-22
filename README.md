@@ -50,5 +50,9 @@ In other words, the implementation of a principle should be viewed only as the b
 
 ## back
 - google cloud firestore
-- google cloud funnctions
+- google cloud functions
 - google cloud pub sub
+- google cloud storage
+- google cloud dataflow
+- google cloud big query
+- google cloud ml kit
