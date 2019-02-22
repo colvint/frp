@@ -3,13 +3,13 @@
 # principles
 
 ## global
-- data are event streams
-- functions process data
-- functions are pure
-- functions are legible
-- functions don't mutate data
-- iteratively decompose complexity into simple pure functions
-- separate reads from writes
+- should convert all data into streams
+- should process all streams with functions
+- should not allow impure functions
+- should not allow illegible functions
+- should not allow functions to mutate data
+- should not allow complex functions
+- should not allow reads and writes to colocate
 
 ## front
 - should expect to be offline
@@ -23,7 +23,7 @@
 - should expose a realtime api
 - should maintain an immutable event store as the single-source-of-truth
 - should be composed of functions triggered by events
-- each function should have its own exclusive datastore (table or database)
+- should require functions to have an isolated data store
 - should be observable through tracing
 
 # Implementation
